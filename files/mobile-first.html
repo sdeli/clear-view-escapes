@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MOBILE FIRST WEBDESIGN</title>
+</head>
+<body>
+	
+	<h4 >MOBILE FIRST WEBDESIGN</h4>
+
+	<p > MOBILE FIRST - CONCEPT
+
+		Websites are built in opposite direction: Mobile View => Tablet View => Desktop View
+		-due to the higher traffic comes from mogile devices
+
+		Download website elements specified to viewport - prevent to download data user wont use
+
+		Load as quickly as possible on mobile
+		
+	</p>
+
+	<p > MOBILE FIRST - DESIGN CONTEXT
+
+		- Designing around smaller screen
+
+		- Prioritize content
+
+		- Anticipate most common user actions
+
+		- Experts involver: Information Arcitect, Usability Expert, Graphic Designer
+
+	</p>
+
+	<p> MOBILE FIRST - DEVELOPMENT CONTEXT
+
+		- Website shouldnt involve data unnecessary on users viewport
+
+		- Treat the most essential viewport as baseline and develop upwards from there
+
+		- Quick load for every wievport
+
+	</p>
+
+	<p> CSS CONVENTIONS
+		
+	</p>
+
+	<div> <h4>MUST USE TECHNOLGIES</h4>
+
+		<p> RESPONSIVE IMAGE SYSTEM
+
+			Ways of handling images in html:
+				- Art Direction and Cropping 
+				- Image resolution and file size
+
+			Example - Control over cropping / art direction:
+
+				Example 1
+				<picture>
+					<source srcset="crop-large.jpg, crop-large-hier-resolution.jpg" media="(min-width: 1200px)">
+					<source srcset="crop-medium.jpg, crop-medium-hier-resolution.jpg" media="(min-width: 800px)>
+					<img src="crop-small.jpg" alt="">
+				</picture>
+
+				Example 2
+				<picture>
+					<img src="assets/images/our-start-portrait-hi-dpi.jpg" alt="">
+					<source sizes="404px" srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">
+					<source sizes="320px" srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764" media="(min-width: 800px)">
+					<img src="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder, Jane Doe">
+				</picture>  
+
+			Example - Size Controll	- 
+				<img srcset="crop-small.jpg 570w, crop-medium.jpg 800w, crop-large.jpg 1200w" alt="">
+			
+
+			MAIN CONSEQUENCES:
+
+					- Images need to be cropped according to the breakpoints of the grid
+					- Attributes of cropping: 
+							- Style of Cropping:
+								- mobile: landscape
+								- tablet: Portrait
+								- Desktop: normal
+
+							- Resolution of cropped image:
+								- check examples in travel-site/assets/images
+
+							- Important breakpoints: 
+									- min-width: 640px
+									- min-width: 800px
+									- min-width: 1200px
+									- for further check examples
+
+					- Image resolution need to be decraised by tynier displays
+
+		</p>
+
+
+		<p> CSS BEM LIBRARY / GRID SYSTEM
+
+			> WRAPPERS: wrap blocks from the sides
+
+			> PAGE SECTIONS: separate page blocks from top and bottom
+
+			> ROW-GRID in page sections
+
+			> HEADLINE STYLERS
+
+			> RESPOSIVE IMAGE SYSTEM for images
+			
+		</p>
+
+		<p> BEM BLOCKS
+
+			> PAGE SECTIONS
+
+			> GRID COLUMNS
+			
+			> PARAGRAPH TAGS
+
+			> HEADINGS
+		</p>
+		<p>REM - instead of pixels
+
+				- wanted size is pixels / 16 = 1rem;
+			
+		</p>
+	</div>
+
+</body>
+</html>

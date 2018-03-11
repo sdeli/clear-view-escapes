@@ -1,0 +1,63 @@
+/*
+	Dependencies:
+		_wrapper.css
+		_mixins.css
+		_variables.css
+
+*/
+
+.large-hero {
+	position: relative;
+	border-bottom: 10px solid $mainBlue;
+	
+	&__img {
+		display: block;
+	}
+
+	&__text-content {
+		position: absolute;
+		top:50%;
+		left:0%;
+		text-align: center;
+		width: 100%;
+		transform: translateY(-50%);
+	}
+
+	&__title {
+		font-size: 2rem;
+		font-weight: 300;
+		color: $mainBlue;
+		margin: 0;
+
+		@mixin atSmall {
+			font-size: 4.8rem;
+		}
+	}
+
+	&__subtitle {
+		margin: 0;
+		font-size: 1.5rem;
+		font-weight: 300;
+		color: $mainBlue;
+		margin-bottom: 0.4rem;
+		margin-top: 0.4rem;
+
+		@mixin atSmall {
+			font-size: 2.9rem;		
+		}
+	}
+	
+	&__description {
+		display: inline-block;
+		color: #fff;
+		font-size: 1.1rem; /*30px*/
+		font-weight: 100;
+		text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+
+		@mixin atSmall {
+			font-size: 1.8rem;		
+		}
+	}
+}
+
+
