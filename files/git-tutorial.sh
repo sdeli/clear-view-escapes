@@ -42,12 +42,10 @@ git clone https://github.com/LearnWebCode/welcome-to-git
 git remote -v
 
 # CASE 8 Change origine ======================================>
-git remote set-url origin https://github.com/sdeli/web-developer-workflow
+	
 
 # CASE Set Origin where to push/pull ================================>
 git remote add origin https://github.com/sdeli/web-developer-workflow
-
-
 
 # CASE Push =============== ======================================>
 git push -u origin master
