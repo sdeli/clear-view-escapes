@@ -58,3 +58,11 @@ git branch branchname
 
 # CASE: Sqitch branch ==================================>
 git checkout branchname
+
+# CASE: Delete Branch ==================================>
+git branch -d branchname
+
+# CASE: create branch and switch to ==================================>
+git checkout -b our-features
+
+# CASE: Merge branch into master ==================================>

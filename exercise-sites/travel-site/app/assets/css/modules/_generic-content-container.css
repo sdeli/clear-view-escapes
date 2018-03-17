@@ -2,13 +2,15 @@
 
  dependencies:
 		_global.css
+
 */
 
 .generic-content-container {
 	
 	p {
+		font-weight: 300;
 		line-height: 1.65;
-		margin-right: 1.8rem 0;
+		margin-right: 0 0 1.8rem 0;
 
 		@mixin atSmall{
 			font-size: 1.125rem;
