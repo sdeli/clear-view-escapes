@@ -64,3 +64,5 @@ git branch -d branchname
 
 # CASE: create branch and switch to ==================================>
 git checkout -b our-features
+
+# CASE: Merge branch into master ==================================>
