@@ -47,8 +47,6 @@ git remote set-url origin https://github.com/sdeli/web-developer-workflow
 # CASE Set Origin where to push/pull ================================>
 git remote add origin https://github.com/sdeli/web-developer-workflow
 
-
-
 # CASE Push =============== ======================================>
 git push -u origin master
 
@@ -60,3 +58,9 @@ git branch branchname
 
 # CASE: Sqitch branch ==================================>
 git checkout branchname
+
+# CASE: Delete Branch ==================================>
+git branch -d branchname
+
+# CASE: create branch and switch to ==================================>
+git checkout -b our-features
