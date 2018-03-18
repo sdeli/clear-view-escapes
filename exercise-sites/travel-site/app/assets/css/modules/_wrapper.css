@@ -28,7 +28,7 @@
 		padding-left: 0;
 		padding-right: 0;
 
-		@mixin atSmall {
+		@mixin atXSmall {
 			padding-left: 18px;
 			padding-right: 18px;
 		
