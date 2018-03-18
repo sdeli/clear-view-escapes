@@ -27,5 +27,9 @@
 			display: inline-block;
 		}
 	}
+
+	&--blue {
+		color: $mainBlue;
+	}
 }
 

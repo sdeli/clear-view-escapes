@@ -10,8 +10,32 @@ Dependency:
 
 		@mixin clearfix;
 		
-		&--gutter {
-			margin-right: -65px;
+		&--gutter-md {
+
+			@mixin atMedium {
+				margin-right: -65px;
+			}	
+		}
+
+		&--gutter-md > div {
+
+			@mixin atMedium {
+				padding-right: 65px;
+			}
+		}
+
+		&--gutter-md-small {
+
+			@mixin atMedium {
+				margin-right: -45px;
+			}
+		}
+		
+		&--gutter-md-small > div {
+			
+			@mixin atMedium {
+				padding-right: 45px;
+			}
 		}
 
 		&__b-margin-until-medium {
@@ -121,9 +145,24 @@ Dependency:
 		@mixin atLarge {
 
 		} /* END @mixin atLarge */
+		
+		/* Equal hight rules*/
 
-		&--gutter > div {
-			padding-right: 65px;
+		&--equal-hight-at-medium {
+
+			@mixin atMedium {
+				display: flex;
+			}
+
+			& > div {
+				float: none;
+				display: flex;
+			}
+
 		}
+
+		/*  END Equal hight rules*/
+
+
 
 	} /* END row */
