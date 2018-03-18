@@ -69,4 +69,4 @@ git checkout -b our-features
 git merge our-features --no-ff
 
 # CASE:  ==================================>
-git checkout head ~ 1/-1
+#git checkout head ~ 1/-1
