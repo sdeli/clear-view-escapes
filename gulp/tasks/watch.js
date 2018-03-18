@@ -1,6 +1,8 @@
 var gulp = require("gulp"),
 gulpWatch = require("gulp-watch"),
 browserSync = require("browser-sync").create();
+var watchIterator = 0;
+
 
 gulp.task( "watch", function(){
 
@@ -42,5 +44,12 @@ gulp.task( "watch", function(){
 gulp.task( "cssInject",['styles'], function(){
 
 	browserSync.reload();
-
+	gulp.start("iterator");
 });
+
+gulp.task( "iterator", function(){
+
+	console.log("current Watch: "+watchIterator );
+	watchIterator++
+
+})
