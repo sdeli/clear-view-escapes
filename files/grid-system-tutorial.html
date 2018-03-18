@@ -1,8 +1,6 @@
 <h1>GRID SYSTEM TUTORIAL</h1>
 
-
-<h2>STRUCTURE OF A GRID SYSTEM</h2>
-<p>
+<p><h2>STRUCTURE OF A GRID SYSTEM</h2>
 	<ol>
 		<li>Container / Main Side-wrapper
 
@@ -43,4 +41,94 @@
 	</ol>
 
 			 	
+</p> <!-- STRUCTURE OF A GRID SYSTEM  -->
+
+<p><h2>GRID BREAKPOINTS</h2>
+		
+		<strong>>MEANINGS</strong>
+		<p>min-width: 530px => from less than 530px up until 530px </p>
+		<p>max-width: 530px => from more than 530px down until 530px</p>
+		
+		<ul><strong>BOOSTRAP BREAKPONTS</strong>
+			
+			<li> < 768px XS </li>
+			<li> >= 768px SM </li>	
+			<li> >= 992px MD </li>	
+			<li> >= 1200px LG </li>
+
+		</ul>
+
+	<style>
+		/* From web developer workflow tutorial */
+			@define-mixin atSmall{
+
+				@media (min-width: 530px) {
+					@mixin-content
+				}
+
+			}
+
+			@define-mixin atMedium{
+
+				@media (min-width: 800px) {
+					@mixin-content
+				}
+
+			}
+
+			@define-mixin atLarge{
+
+				@media (min-width: 1200px) {
+					@mixin-content
+				}
+
+			}
+		/* END From web developer workflow tutorial */
+			
+		/* Bootstrap Breakponts */
+		
+			/* XS is baseline !!!!! */
+
+			/* SM */
+			@media (min-width: 768px) {
+
+			}
+
+			/* MD */
+			@media (min-width: 992px) {
+
+			}
+			
+			/* LG */
+			@media (min-width: 1200px) {
+
+			}
+
+		/* END Bootstrap Breakponts */
+
+	</style>
+	
+</p> <!-- GRID BREAKPOINTS  -->
+
+<p><h2>GRID MULTICOLUMN LAYOUT IMPLEMENTATION <small>threw full set of breakpoints</small></h2>
+		
+	<p><strong>3 Column Layout</strong>
+		
+		<ol>
+			<li> < 768px XS 
+				<p>Sigle Column layout</p>
+				<p>Capillary/0 margin/padding bewtween wievport edge and Col</p>
+				<p>Col has 18px padding until col-content</p>
+			</li>
+
+			<li> >= 768px SM 
+				<p></p>
+			</li>	
+			<li> >= 992px MD </li>	
+			<li> >= 1200px LG </li>
+		</ol>
+
+	</p>
+
+
 </p>
