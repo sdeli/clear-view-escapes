@@ -6,7 +6,6 @@ var gulp = require("gulp"),
     postcssMixins = require("postcss-mixins"),
     postcssImport = require("postcss-import");
    
-
 gulp.task("styles", function(){
 
    return gulp.src("exercise-sites/travel-site/app/assets/css/style.css")
