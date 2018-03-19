@@ -10,6 +10,6 @@ to create a procedure which can be called from the command line like: gulp proce
 gulp.task("name" function(){ ... })
 
 */
-
 require("./gulp/tasks/style.js");
 require("./gulp/tasks/watch.js");
+require("./gulp/tasks/sprites.js");
