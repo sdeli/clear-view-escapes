@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "js/jquery-3.2.1.min.js",
   "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.1",
