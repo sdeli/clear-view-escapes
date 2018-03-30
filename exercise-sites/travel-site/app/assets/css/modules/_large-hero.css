@@ -15,6 +15,7 @@
 	}
 
 	&__text-content {
+		padding-top: 43px; 
 		position: absolute;
 		top:50%;
 		left:0%;
@@ -29,6 +30,10 @@
 		color: $mainBlue;
 		margin: 0;
 
+		@mixin atXSmall {
+			font-size: 3.6rem;
+		}
+
 		@mixin atSmall {
 			font-size: 4.8rem;
 		}
@@ -41,6 +46,10 @@
 		color: $mainBlue;
 		margin-bottom: 0.4rem;
 		margin-top: 0.4rem;
+		
+		@mixin atXSmall {
+			font-size: 2.2rem;
+		}
 
 		@mixin atSmall {
 			font-size: 2.9rem;		
@@ -50,11 +59,18 @@
 	&__description {
 		display: inline-block;
 		color: #fff;
+		max-width: 300px;
 		font-size: 1.1rem; /*30px*/
 		font-weight: 100;
 		text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+		
+		@mixin atXSmall {
+			max-width: 350px;
+			font-size: 1.35rem;		
+		}
 
 		@mixin atSmall {
+			max-width: 500px;
 			font-size: 1.8rem;		
 		}
 	}

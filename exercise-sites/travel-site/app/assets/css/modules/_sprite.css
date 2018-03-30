@@ -3,13 +3,20 @@
 	background-image: url('../../images/sprites/css/sprite-d675eadb.svg');
 }
 
+.icon--text {
+	position: absolute;
+	z-index: -500;
+	
+}
+
 .icon--clear-view-escapes {
 	width: 142.4px;
 	height: 59.53px;
 	background-position: 0 0;
 }
 
-.icon--comment {
+.icon--
+ {
 	width: 64px;
 	height: 64px;
 	background-position: 99.70443349753694% 0;

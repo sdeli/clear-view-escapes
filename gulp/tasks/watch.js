@@ -37,6 +37,11 @@ gulp.task( "watch", function(){
 
 	});
 
+	gulpWatch('exercise-sites/travel-site/app/assets/js/**/*.js', function(){
+
+		gulp.start("scriptsRefresh");
+
+	});
 
 });
 
@@ -52,4 +57,10 @@ gulp.task( "iterator", function(){
 	console.log("current Watch: "+watchIterator );
 	watchIterator++
 
-})
+});
+
+gulp.task('scriptsRefresh',['scripts'], function(){
+
+	browserSync.reload();
+
+});
