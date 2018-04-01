@@ -3,7 +3,6 @@ import $ from 'jquery';
 class MainMenu {
 
 	constructor(){
-
 		this.menuIcon = $('.site-header__menu-icon');
 		this.menuIconMiddleBar = $('.site-header__menu-icon__bar-middle');
 		this.menuContent = $('.site-header__menu-content');

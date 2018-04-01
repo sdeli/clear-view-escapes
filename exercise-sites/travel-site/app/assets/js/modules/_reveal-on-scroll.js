@@ -2,8 +2,7 @@ import $ from 'jquery';
 
 class RevealOnScroll {
 
-	consectetur(){
-
+	constructor(){
 		this.itemsToReveal = $()
 
 	}
