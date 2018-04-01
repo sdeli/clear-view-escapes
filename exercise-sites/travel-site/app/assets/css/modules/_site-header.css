@@ -19,8 +19,16 @@
 	text-align: center;
 
 	@mixin atSmall {
+		position: fixed;
 		background-color:  rgba($mainBlue, .3);
 		text-align: unset;
+		transition: background-color .5s ease-out;
+
+	}
+
+	&--dark {
+		background-color: rgba(23, 51, 72, .85);
+
 	}
 	
 	
@@ -55,6 +63,12 @@
 		@mixin atSmall{
 			left: unset;
 			transform: unset;
+			transition: transform .3s ease-out;
+			transform-origin: 50% 0;
+
+			.site-header--dark & {
+				transform: scale(.57);
+			}
 		}
 
 		&__sprite--small {

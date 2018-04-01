@@ -50,6 +50,10 @@
 			    background-color: unset !important; 
 			}
 
+			&.is-current-link {
+				color: $activeLinkColor;
+			}
+
 		}
 	}
 

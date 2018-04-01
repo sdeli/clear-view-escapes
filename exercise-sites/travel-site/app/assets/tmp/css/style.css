@@ -1454,10 +1454,17 @@ Dependency:
 @media (min-width: 768px) {
 
 .site-header {
+		position: fixed;
 		background-color: rgba(47,85,112, .3);
-		text-align: unset
+		text-align: unset;
+		transition: background-color .5s ease-out
 		
 }}
+
+.site-header--dark {
+		background-color: rgba(23, 51, 72, .85);
+
+	}
 
 .site-header--invisible {
 		opacity: 0;
@@ -1495,8 +1502,18 @@ Dependency:
 .site-header__logo {
 			left: unset;
 			-webkit-transform: unset;
-			        transform: unset
-	}}
+			        transform: unset;
+			transition: -webkit-transform .3s ease-out;
+			transition: transform .3s ease-out;
+			transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+			-webkit-transform-origin: 50% 0;
+			        transform-origin: 50% 0
+	}
+
+			.site-header--dark .site-header__logo {
+				-webkit-transform: scale(.57);
+				        transform: scale(.57);
+			}}
 
 .site-header__logo__sprite--small {
 			-webkit-transform: scale(0.8);
@@ -1681,6 +1698,10 @@ Dependency:
 			    background-color: unset !important
 
 		}}
+
+.primary-nav li a.is-current-link {
+				color: #fabb69;
+			}
 
 .primary-nav .primary-nav__li--open {
 		padding-right: 10px;

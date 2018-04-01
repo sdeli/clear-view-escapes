@@ -16,10 +16,7 @@ class RevealOnScroll {
 
 	createWaypoints(){
 		var that = this
-		console.log(that.offcetPercentage);
-		console.log(this.itemsToReveal);
 		this.itemsToReveal.each(function(index, item){
-
 			new Waypoint({
 				element: item,
 				handler: function(){

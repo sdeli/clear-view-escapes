@@ -1,6 +1,8 @@
 import $ from 'jquery';
+import waypoints from '../../../../../../node_modules/waypoints/lib/noframework.waypoints.js';
+import smoothScroll from "jquery-smooth-scroll";
 
-class MainMenu {
+export class MainMenu {
 
 	constructor(){
 		this.menuIcon = $('.site-header__menu-icon');
@@ -27,8 +29,104 @@ class MainMenu {
 		this.menuContentLi.toggleClass("primary-nav__li--open");
 		this.menuContentA.toggleClass("primary-nav__a--open");
 		this.siteheader.toggleClass("site-header--background");
+		this.Waypoint();
 
 	}
 }
 
-export default MainMenu;
+export class FixedHeader {
+
+	constructor(){
+
+		this.siteheader = $(".site-header");
+		this.headerTriggerElement = $(".large-hero__title");
+		this.pageSectionToScrollto = $("[data-matching-link]");
+		this.headerLinks = $(".primary-nav a");
+		this.createHeaderWaypont();
+		this.createPageSectionWaypoints();
+		this.addSmoothScroll();
+	} // constructor()
+
+	addSmoothScroll(){
+
+		this.headerLinks.smoothScroll({
+			speed : 400
+		})
+
+	}
+
+	createHeaderWaypont(){
+
+		var that = this;
+
+		new Waypoint({
+			element: that.headerTriggerElement[0],
+			handler: function(direction){
+
+				if (direction === "down") {
+					that.siteheader.addClass("site-header--dark");
+
+				} else {
+					that.siteheader.removeClass("site-header--dark");
+				}
+			}
+		}) //Waypont
+	} // createHeaderWaypont()
+
+	createPageSectionWaypoints(){
+		this.pageSectionToScrollto.each(function( index, item ){
+
+			new Waypoint({
+				element: item,
+				handler: function(direction){
+
+					var matchingLink = item.getAttribute("data-matching-link");
+					var currentActive = $(".is-current-link");
+
+					if(currentActive[0] != undefined && direction === "down"){
+
+						currentActive.removeClass("is-current-link")
+						
+					} else if (matchingLink === "#no-link" && currentActive[0] != undefined && direction === "down") {
+
+						currentActive.removeClass("is-current-link")
+
+					} // else if
+
+					$(matchingLink).addClass("is-current-link");
+
+				},
+				offset : "25%"
+
+			}) // Waypoint
+
+			new Waypoint({
+				element: item,
+				handler: function(direction){
+
+					var matchingLink = item.getAttribute("data-matching-link");
+					var currentActive = $(".is-current-link");
+
+					if(currentActive[0] != undefined && direction === "up"){
+
+						currentActive.removeClass("is-current-link")
+
+					} else if (matchingLink === "#no-link" && currentActive[0] != undefined && direction === "up" ) {
+
+						currentActive.removeClass("is-current-link")
+
+					}
+
+					$(matchingLink).addClass("is-current-link");
+
+				}, //handler
+				offset : "-40%"
+
+			}) // Waypoint - up
+
+
+		}) //each
+
+	} // createPageSectionWaypoints()
+
+} //export class FixedHeader
