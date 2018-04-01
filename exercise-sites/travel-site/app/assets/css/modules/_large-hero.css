@@ -15,14 +15,19 @@
 	}
 
 	&__text-content {
-		padding-top: 43px; 
+		padding-top: 58px; 
 		position: absolute;
 		top:50%;
 		left:0%;
 		text-align: center;
 		width: 100%;
 		transform: translateY(-50%);
+
+	@mixin atXXSmall {
+		padding-top: 43px;
 	}
+	}
+
 
 	&__title {
 		font-size: 2rem;
