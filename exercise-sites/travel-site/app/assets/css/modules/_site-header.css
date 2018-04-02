@@ -17,6 +17,7 @@
 	width: 100%;
 	min-height: 62px;
 	text-align: center;
+	cursor: pointer;
 
 	@mixin atSmall {
 		position: fixed;
@@ -27,7 +28,10 @@
 	}
 
 	&--dark {
-		background-color: rgba(23, 51, 72, .85);
+
+		@mixin atSmall{
+			background-color: rgba(23, 51, 72, .85);
+		}
 
 	}
 	
@@ -175,3 +179,4 @@
 	}
 		
 }
+

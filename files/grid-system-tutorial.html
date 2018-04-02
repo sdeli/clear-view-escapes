@@ -2,53 +2,64 @@
 
 <p><h2>STRUCTURE OF A GRID SYSTEM</h2>
 	<ol>
-		<li>Container / Main Side-wrapper
+		<li data-level="1">Container / Main-Section Side-wrapper </li>
 
-			<li>Page Section Separators: separate page sections/blocks on top and bottom</li>
-			<li>Row
-				<li>Columns</li>		
-				<li>Offset-Columns</li>		
-					<!-- table-col-structure =============================== -->		
-					<table id="table-col-structure" class="" >
-						<tr>
-							<th>viewport-size:</th>
-							<th>xs</th>
-							<th>s</th>
-							<th>m</th>
-							<th>l</th>
-							<th>xl</th>
-						</tr>
-						<tr>
-							<td>col: </td>
-						</tr>
-						<tr><td>1</td></tr>
-						<tr><td>2</td></tr>
-						<tr><td>3</td></tr>
-						<tr><td>4</td></tr>
-						<tr><td>5</td></tr>
-						<tr><td>6</td></tr>
-						<tr><td>7</td></tr>
-						<tr><td>8</td></tr>
-						<tr><td>9</td></tr>
-						<tr><td>10</td></tr>
-						<tr><td>11</td></tr>
-						<tr><td>12</td></tr>
-					</table>
-					<!-- END table-col-structure =========================== -->
-				<li>ROW-Inside Rows</li>
+		<li data-level="2">Page Section Separators: separate page sections/blocks on top and bottom</li>
+
+			<li data-level="2">Row</li>
+			<li data-level="2">Row Gutters
+				<p>Gutters between the columns</p>
 			</li>
-		</li>
+			
+				<li data-level="3">Columns</li>		
+				<li data-level="3">Offset-Columns</li>		
+				<!-- table-col-structure =============================== -->		
+				<table id="table-col-structure" data-explanation-for-level="3" >
+					<tr>
+						<th>viewport-size:</th>
+						<th>xs</th>
+						<th>s</th>
+						<th>m</th>
+						<th>l</th>
+						<th>xl</th>
+					</tr>
+					<tr>
+						<td>col: </td>
+					</tr>
+					<tr><td>1</td></tr>
+					<tr><td>2</td></tr>
+					<tr><td>3</td></tr>
+					<tr><td>4</td></tr>
+					<tr><td>5</td></tr>
+					<tr><td>6</td></tr>
+					<tr><td>7</td></tr>
+					<tr><td>8</td></tr>
+					<tr><td>9</td></tr>
+					<tr><td>10</td></tr>
+					<tr><td>11</td></tr>
+					<tr><td>12</td></tr>
+				</table>
+				<!-- END table-col-structure =========================== -->
+					
+					<li data-level="4" >ROW-Inside Cols</li>
+					<li data-level="4">In Column Blocks / In Col Wrappers
+						<li>Paragraphs</li>
+						<li>img</li>
+						<li>video</li>
+					</li>
 	</ol>
 
 			 	
 </p> <!-- STRUCTURE OF A GRID SYSTEM  -->
 
-<p><h2>GRID BREAKPOINTS</h2>
+<p><h2>GRID BREAKPOINTS => CSS mixin / Col</h2>
 		
 		<strong>>MEANINGS</strong>
 		<p>min-width: 530px => from less than 530px up until 530px </p>
 		<p>max-width: 530px => from more than 530px down until 530px</p>
 		
+		<p> <= min-width </p>
+
 		<ul><strong>BOOSTRAP 3 BREAKPONTS</strong>
 			
 			<li> < 768px XS </li>
@@ -58,13 +69,24 @@
 
 		</ul>
 
-		<ul><strong>MY BREAKPONTS</strong>
-			
+		<ul><strong>MY CURRENT BREAKPONTS</strong>
+
 			<li> <= 576px xs </li>
 			<li> <= 768px sm </li>	
 			<li> <= 992px md </li>	
 			<li> <= 1200px lg </li>
 			<li>  > 1200px xl </li>
+
+		</ul>
+
+		<ul><strong>MY FUTURE BREAKPONTS</strong>
+			
+			<li> Iphone 5/6 category 320/376px - baseline </li>
+			<li> <= Iphone 6 Plus 414 px - baseline / xs </li>
+			<li> <= Ipad 768px sm - sm</li>	
+			<li> <= Ipad Pro kind of 992px - md </li>	
+			<li> <= Laptop 1200px - lg </li>
+			<li>  > 1200px - xl </li>
 
 		</ul>
 

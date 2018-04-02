@@ -11,11 +11,15 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
-	
+
 	&--medium {
 		max-width: 976px;
 	}
 
+	&--narrow {
+		max-width: 470px;
+	}
+	
 	&--b-margin {
 		margin-bottom: 1rem;
 

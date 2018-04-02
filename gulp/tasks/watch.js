@@ -19,11 +19,12 @@ gulp.task( "watch", function(){
 
 	});
 
-	/*gulpWatch('exercise-sites/travel-site-files/app/index.html', function(){
+	gulpWatch('exercise-sites/travel-site-files/app/index.html', function(){
 
-		gulp.start("html");
+		browserSync.reload();
+		gulp.start("iterator");
 
-	});*/
+	});
 
 	gulpWatch('exercise-sites/travel-site/app/assets/css/style.css', function(){
 
