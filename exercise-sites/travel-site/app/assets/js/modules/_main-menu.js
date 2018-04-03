@@ -13,12 +13,11 @@ export class MainMenu {
 		this.siteheader = $('.site-header');
 		this.events();
 		
+		
 	}
 
 	events(){
-
 		this.menuIcon.click(this.toggleTheMenu.bind(this));
-
 	}
 
 	toggleTheMenu(){

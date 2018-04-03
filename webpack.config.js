@@ -13,7 +13,10 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
-	entry: './exercise-sites/travel-site/app/assets/js/app.js',
+	entry: {
+		app : './exercise-sites/travel-site/app/assets/js/vendor.js',
+		vendor : './exercise-sites/travel-site/app/assets/js/vendor.js'	
+	},
 
 	output: {
 		filename: '[name].bundle.js',
