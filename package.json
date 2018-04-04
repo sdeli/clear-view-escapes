@@ -39,25 +39,21 @@
     "webpack-cli": "^2.0.13"
   },
   "comments": {
-    "gulpTasks": {
+    "GULPTASKS": {
       "AUTO COPY file": "",
       "RENAME auto copied file": "",
-      "CSS FILTERS": {
-        "Mixins": "",
-        "Nested CSS": "",
-        "CSS Import": "",
-        "Variable Declaration": "",
-        "Auto-Prefixing": ""
-      },
+      "DELETE FILES and FOLDERS": "",
+      "CSS FILTERS": ["Mixins", "Nested CSS", "CSS Import", "Variable Declaration","Auto-Prefixing"],
       "SPRITES": {
-        "Create Sprites from svg files": "",
-        "Create the CSS Code for Sprites": ""
+        "task_1" : "Create Sprites from svg files",
+        "task_2" : "Create the CSS Code for Sprites"
       },
-      "BROWSER SYNC": {
-        "Browser Reload": "",
-        "Fill In CSS": ""
-      },
-      "DELETE FILES and FOLDERS ": ""
+      "BROWSER SYNC": ["Browser Reload", "Fill In CSS"],
+      "WAYPOINTS": "",
+      "JQUERY SMOOTH SCROLL": "",
+      "WEBPACK/BABEL": "",
+      "LAZY PICTURE LOADING": "",
+      "PICTURE-LOADER": "old brower doesnt support picture and srcset attr"
     }
   }
 }
