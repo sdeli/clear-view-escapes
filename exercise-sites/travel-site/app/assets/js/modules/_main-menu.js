@@ -13,12 +13,11 @@ export class MainMenu {
 		this.siteheader = $('.site-header');
 		this.events();
 		
+		
 	}
 
 	events(){
-
 		this.menuIcon.click(this.toggleTheMenu.bind(this));
-
 	}
 
 	toggleTheMenu(){
@@ -42,10 +41,21 @@ export class FixedHeader {
 		this.headerTriggerElement = $(".large-hero__title");
 		this.pageSectionToScrollto = $("[data-matching-link]");
 		this.headerLinks = $(".primary-nav a");
+		this.lazyImgs = $(".lazyload");
 		this.createHeaderWaypont();
 		this.createPageSectionWaypoints();
 		this.addSmoothScroll();
+		this.refreshwaypoints();
+		console.log("run 1");
 	} // constructor()
+
+	refreshwaypoints(){
+		this.lazyImgs.on('load', function(){
+			console.log("runs");
+			Waypoint.refreshAll();
+		})
+	}
+
 
 	addSmoothScroll(){
 
@@ -58,7 +68,7 @@ export class FixedHeader {
 	createHeaderWaypont(){
 
 		var that = this;
-
+		console.log("createHeaderWaypont");
 		new Waypoint({
 			element: that.headerTriggerElement[0],
 			handler: function(direction){
@@ -120,7 +130,7 @@ export class FixedHeader {
 					$(matchingLink).addClass("is-current-link");
 
 				}, //handler
-				offset : "-40%"
+				offset : "-80%"
 
 			}) // Waypoint - up
 
