@@ -14,7 +14,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
 	mode: 'development',
 	entry: {
-		app : './exercise-sites/travel-site/app/assets/js/vendor.js',
+		app : './exercise-sites/travel-site/app/assets/js/app.js',
 		vendor : './exercise-sites/travel-site/app/assets/js/vendor.js'	
 	},
 
