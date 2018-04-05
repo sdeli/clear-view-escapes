@@ -14,6 +14,7 @@
     "jquery": "^3.3.1",
     "jquery-smooth-scroll": "^2.2.0",
     "normalize.css": "^8.0.0",
+    "picturefill": "^3.0.2",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
@@ -34,6 +35,7 @@
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^3.0.0",
     "postcss-simple-vars": "^4.1.0",
+    "svg2png": "^4.1.1",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
@@ -43,12 +45,21 @@
       "AUTO COPY file": "",
       "RENAME auto copied file": "",
       "DELETE FILES and FOLDERS": "",
-      "CSS FILTERS": ["Mixins", "Nested CSS", "CSS Import", "Variable Declaration","Auto-Prefixing"],
+      "CSS FILTERS": [
+        "Mixins",
+        "Nested CSS",
+        "CSS Import",
+        "Variable Declaration",
+        "Auto-Prefixing"
+      ],
       "SPRITES": {
-        "task_1" : "Create Sprites from svg files",
-        "task_2" : "Create the CSS Code for Sprites"
+        "task_1": "Create Sprites from svg files",
+        "task_2": "Create the CSS Code for Sprites"
       },
-      "BROWSER SYNC": ["Browser Reload", "Fill In CSS"],
+      "BROWSER SYNC": [
+        "Browser Reload",
+        "Fill In CSS"
+      ],
       "WAYPOINTS": "",
       "JQUERY SMOOTH SCROLL": "",
       "WEBPACK/BABEL": "",

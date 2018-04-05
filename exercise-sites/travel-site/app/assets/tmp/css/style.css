@@ -1333,20 +1333,13 @@ Dependency:
 	background-image: url('../../images/sprites/css/sprite-d675eadb.svg');
 }
 
-.icon--text {
-	position: absolute;
-	z-index: -500;
-	
-}
-
 .icon--clear-view-escapes {
 	width: 142.4px;
 	height: 59.53px;
 	background-position: 0 0;
 }
 
-.icon--
- {
+.icon--comment {
 	width: 64px;
 	height: 64px;
 	background-position: 99.70443349753694% 0;
@@ -1525,8 +1518,8 @@ Dependency:
 	}
 
 			.site-header--dark .site-header__logo {
-				-webkit-transform: scale(.57);
-				        transform: scale(.57);
+				-webkit-transform: scale(.49);
+				        transform: scale(.49);
 			}}
 
 .site-header__logo__sprite--small {
